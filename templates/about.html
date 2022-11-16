@@ -1,0 +1,398 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ojas Innovative Technologies</title>
+
+  <body>
+<style>
+
+#mixedSlider {
+  position: relative;
+}
+#mixedSlider .MS-content {
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 0%;
+}
+#mixedSlider .MS-content .item {
+  display: inline-block;
+  /*width: 33.3333%;*/
+  width:20%;
+  position: relative;
+  vertical-align: top;
+  overflow: hidden;
+  height: 100%;
+  white-space: normal;
+  padding: 0 25px;
+}
+@media (max-width: 991px) {
+  #mixedSlider .MS-content .item {
+    width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  #mixedSlider .MS-content .item {
+    width: 100%;
+  }
+}
+#mixedSlider .MS-content .item .imgTitle {
+  position: relative;
+}
+#mixedSlider .MS-content .item .imgTitle .blogTitle {
+  margin: 0;
+  text-align: left;
+  letter-spacing: 2px;
+  color: #252525;
+  font-style: italic;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  bottom: 0;
+  font-weight: bold;
+  padding: 0 0 2px 10px;
+}
+#mixedSlider .MS-content .item .imgTitle img {
+  height: auto;
+  width: 100%;
+}
+#mixedSlider .MS-content .item p {
+  font-size: 16px;
+  margin: 2px 10px 0 5px;
+  text-indent: 15px;
+}
+#mixedSlider .MS-content .item a {
+  float: right;
+  margin: 0 20px 0 0;
+  font-size: 16px;
+  font-style: italic;
+  color: rgba(173, 0, 0, 0.82);
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: linear 0.1s;
+}
+#mixedSlider .MS-content .item a:hover {
+  text-shadow: 0 0 1px grey;
+}
+#mixedSlider .MS-controls button {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  outline: 0;
+  font-size: 30px;
+  top: 0px;
+  color: rgba(0, 0, 0, 0.4);
+  transition: 0.15s linear;
+}
+#mixedSlider .MS-controls button:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+@media (max-width: 992px) {
+  #mixedSlider .MS-controls button {
+    font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  #mixedSlider .MS-controls button {
+    font-size: 20px;
+  }
+}
+#mixedSlider .MS-controls .MS-left {
+  left: -35px;
+}
+@media (max-width: 767px) {
+  #mixedSlider .MS-controls .MS-left {
+    left: -10px;
+  }
+}
+#mixedSlider .MS-controls .MS-right {
+  right: -20px;
+}
+@media (max-width: 767px) {
+  #mixedSlider .MS-controls .MS-right {
+    right: -10px;
+  }
+}
+#basicSlider { position: relative; }
+
+#basicSlider .MS-content {
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 2%;
+  height: 50px;
+}
+
+#basicSlider .MS-content .item {
+  display: inline-block;
+  width: 20%;
+  position: relative;
+  vertical-align: top;
+  overflow: hidden;
+  height: 100%;
+  white-space: normal;
+  line-height: 50px;
+  vertical-align: middle;
+}
+@media (max-width: 991px) {
+
+#basicSlider .MS-content .item { width: 25%; }
+}
+@media (max-width: 767px) {
+
+#basicSlider .MS-content .item { width: 35%; }
+}
+@media (max-width: 500px) {
+
+#basicSlider .MS-content .item { width: 50%; }
+}
+
+#basicSlider .MS-content .item a {
+  line-height: 50px;
+  vertical-align: middle;
+}
+
+#basicSlider .MS-controls button { position: absolute; }
+
+#basicSlider .MS-controls .MS-left {
+  top: 35px;
+  left: 10px;
+}
+
+#basicSlider .MS-controls .MS-right {
+  top: 35px;
+  right: 10px;
+}
+</style>
+<!-- header-bottom -->
+
+<div class="feature">
+    <div class="container">
+      <h1 style="color: #1d62a7;">About<span style="color: #EFAF4E;"> Ojas </span>  Innovative Technologies
+      </h1>
+		  <h4 style="color: #EFAF4E;" class="text-center">Cost Effective IT Services Partner</h4>
+	</div>
+	<section id="main1" class="row">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+
+
+
+
+
+
+
+
+
+    		<div class="item ">
+    		  <img src="https://ojas-it.com/media/slides/original/slide3_646.jpg" width="100%">
+    		  <div class="carousel-caption">
+    			 <h1>Staff Augmentation</h1>
+    		  </div>
+    		</div>
+
+  	           </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" style="font-size:0px;">
+
+        </span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" style="font-size:0px;">
+    	   <img src="images/next.png" />
+        </span>
+      </a>
+    </div> <!--/.carousel-->
+  </section>
+
+
+
+
+
+			<div class="text-center">
+				<a href="application-dev-support.php">
+
+        </a>
+				<a href="identity-governance.php">
+          <div class="col-md-4">
+  					<div class="hi-icon-wrap hi-icon-effect wow fadeInDown service" data-wow-duration="1000ms" data-wow-delay="600ms" >
+  						<i class="icon fa fa-users"></i>
+  						<h2>Identity Governance</h2>
+  						<p style="text-align:center;">Ojas invested it’s time and energy to create an eco system to support your IdM Development needs.  Whether it’s Consulting Services, Support Or just Resources on Staff Augmentation mode, Ojas can be your partner to help you achieve your objectives.  <!--Explore more here.--></p>
+  					</div>
+				  </div>
+        </a>
+				<a href="#">
+          <div class="col-md-4">
+					  <div class="hi-icon-wrap hi-icon-effect wow fadeInDown service"  data-wow-duration="1000ms" data-wow-delay="900ms" >
+						  <i class="icon fa fa-cloud"></i>
+  						<h2>Emerging Technologies</h2>
+  						<p style="text-align:center;">We at Ojas continues to invest in the Emerging Technologies to partner with our Customers to make sure they get the right support from us.  Ojas is investing in SAP HANA, MuleSoft AnyPoint and Cloud as a Service to be competitive.  </p>
+					  </div>
+				  </div>
+        </a>
+				<a href="#">
+          <div class="col-md-4 mtop100">
+  					<div class="hi-icon-wrap hi-icon-effect wow fadeInDown service" data-wow-duration="1000ms" data-wow-delay="300ms" >
+  						<i class="icon fa fa-check-square-o"></i>
+
+  						<h2>Testing As a Service</h2>
+  						<p style="text-align:center;">Quality is one thing in any Software Application, which can’t be compromised…as a small bug can take a big toll on your business.  Our Quality Team understand the business criticality while working on your Application Testing.   Our strong expertise in Manual and Automation Tools coupled with Domain knowledge add value to our Customer’s business applications.  </p>
+					  </div>
+				  </div>
+        </a>
+				<a href="#">
+          <div class="col-md-4 mtop100">
+  					<div class="hi-icon-wrap hi-icon-effect wow fadeInDown service" data-wow-duration="1000ms" data-wow-delay="300ms" >
+  						<i class="icon glyphicon glyphicon-phone"></i>
+
+  						<h2>Mobile App Development</h2>
+  						<p style="text-align:center;">Take Advantage of Mobility for your Business to provide Services on the Go and be competitive in today’s Business World of rapid changes. In this Smart Phone era, Mobility is the only secret for Success. Ojas helps you in creating Mobile Applications in Android, IoS Platforms suiting your business needs with effective cost and scalable solutions. </p>
+					  </div>
+				  </div>
+        </a>
+				<a href="staff-augmentation.php">
+          <div class="col-md-4 mtop100">
+  					<div class="hi-icon-wrap hi-icon-effect wow fadeInDown service" data-wow-duration="1000ms" data-wow-delay="300ms" >
+  						<i class="icon glyphicon glyphicon-user"></i>
+
+  						<h2>Staff Augmentation</h2>
+  						<p style="text-align:center; margin-bottom:5px;">Shortage of Skilled Resources? Need Resources in Specific Location?  Joining Worries? Attrition Issues? Short Term Projects?</p>  <p>Ojas can help you solve all these issues and deploy our Skilled IT Resources across India for the duration you ask for….yet Cost Effective.  </p>
+					  </div>
+				  </div>
+        </a>
+			</div>
+		</div>
+	</div>
+
+	    <!--social hover effects end-->
+
+    	<section id="partner">
+        <div class="container-fluid">
+
+          <div class="col-md-12 count grid">
+
+
+        			  <div class="col-md-3 text-center">
+
+                </div>
+          			<div class="col-md-3 text-center">
+                  <span class="counter">
+                    700</span><span  class="text">Skilled IT Resources
+                  </span>
+                </div>
+          			<div class="col-md-3 text-center"><span class="counter">150</span><span class="text">Happy Customers</span> </div>
+          			<div class="col-md-3 text-center">
+                  <span class="counter">
+                    2                  </span>
+                  <span class="text">
+                    Countries we Operate
+                  </span>
+                </div>
+
+                          </div>
+        </div><!--/.container-->
+      </section><!--/#partner-->
+
+	<section id="conatcat-info">
+    <div class="container">
+      <div class="col-md-12">
+        <div class="media contact-info wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+
+
+          <br>
+        	<div id="mixedSlider">
+            <div class="MS-content">
+
+
+
+
+
+
+                     	              </div>
+              <div class="MS-controls">
+                <button class="MS-left">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </button>
+                <button class="MS-right">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div><!--/.container-->
+  </section><!--/#conatcat-info-->
+	<div class="clearfix"></div>
+
+
+
+
+
+
+
+
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="js/jquery-2.1.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/functions.js"></script>
+<body>
+<script type="text/javascript"> _linkedin_partner_id = "41919"; window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || []; window._linkedin_data_partner_ids.push(_linkedin_partner_id); </script><script type="text/javascript"> (function(){var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript";b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s);})(); </script> <noscript> <img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=41919&fmt=gif" /> </noscript>
+</body>
+
+</html>
+
+
+		jQuery(document).ready(function( $ ) {
+			$('.counter').counterUp({
+				delay: 20,
+			   time: 5000
+			 });
+		});
+	</script>
+
+
+
+		$('#basicSlider').multislider({
+			continuous: true,
+			duration: 2000
+		});
+		$('#mixedSlider').multislider({
+			duration: 750,
+			interval: 3000
+		});
+	</script>
+
+	<script type="text/javascript">
+        var started;
+  function showLightBox()
+  {
+    if (started) return;
+    started = setTimeout(function(){
+        Lightbox.start(document.getElementById('firstImage'));
+        started;
+    },500);
+  }
+</script>
+
+{% endblock %}

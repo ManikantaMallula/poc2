@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Carousel Example</h2>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+     <div class="carousel-inner">
+
+    		<div class="item active">
+    		  <img src="https://ojas-it.com/media/slides/original/Slide1_404.jpg" width="100%">
+    		  <div class="carousel-caption">
+    			 <h1>Mobile App Development & Testing</h1>
+    		  </div>
+    		</div>
+
+
+    		<div class="item ">
+    		  <img src="https://ojas-it.com/media/slides/original/slide1_177.jpg" width="100%">
+    		  <div class="carousel-caption">
+    			 <h1>Smart Approach for IDM to secure your IT environment</h1>
+    		  </div>
+    		</div>
+
+
+    		<div class="item ">
+    		  <img src="https://ojas-it.com/media/slides/original/slide2_7.jpg" width="100%">
+    		  <div class="carousel-caption">
+    			 <h1>Resource on Demand - Excellence at all levels</h1>
+    		  </div>
+    		</div>
+
+
+    		<div class="item ">
+    		  <img src="https://ojas-it.com/media/slides/original/slide3_646.jpg" width="100%">
+    		  <div class="carousel-caption">
+    			 <h1>Staff Augmentation</h1>
+    		  </div>
+    		</div>
+
+
+    		<div class="item ">
+    		  <img src="https://ojas-it.com/media/slides/original/slide4_401.jpg" width="100%">
+    		  <div class="carousel-caption">
+    			 <h1>IT Services Application Development</h1>
+    		  </div>
+    		</div>
+
+  	           </div>
+
+</body>
+</html>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content%}
+
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    table, th, td {
+  border:1px ;
+}
+</style>
+</head>
+<body>
+<h1>Blogs</h1>
+<form action="" method="post">
+    {% csrf_token %}
+</form>
+<table style="width:70%">
+    <tr>
+
+        <td >TITLE</td>
+        <td >DESCRIPTION</td>
+        <td >ACTION</td>
+    </tr>
+    {% for fm in form %}
+    <body>
+    <tr >
+
+        <td style="color:green">{{fm.Title}}</td>
+        <td style="color:blue">{{fm.Description}}</td>
+
+        <td><<a href="/edit/{{fm.id}}">edit</a></td>
+        <td><a href="/delete/{{fm.id}}">delete</a></td>
+
+
+    </tr>
+    </body>
+    {% endfor %}
+</table>
+</body>
+</html>
+{% endblock %}

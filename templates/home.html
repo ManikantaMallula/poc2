@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body >
+<style>
+    table, th, td {
+  border:1px ;
+}
+
+    .srav{
+            background-color:lightblue;
+            margin-left:400px;
+            margin-right:600px;
+      }
+
+</style>
+<div class="srav ">
+<form action="" method="post">
+    {% csrf_token %}
+
+
+</form>
+
+<table style="width:70%">
+    <tr>
+
+      <td >TITLE</td>
+        <td >DESCRIPTION</td>
+        <td >ACTION</td>
+    </td>
+
+
+    <tbody>
+    {% for fm in blog %}
+    <tr >
+
+      <td style="color:green">{{fm.Title}}</td>
+        <td style="color:blue">{{fm.Description}}</td>
+
+        <td> <a href="/edit/{{fm.id}}">edit</a> </td>
+        <td> <a href="/delete/{{fm.id}}">delete</a> </td>
+    </tr>
+    </tbody>
+{% endfor %}
+    </tr>
+</table>
+</body>
+</div>
+</html>
+
+{% endblock %}
+
+
